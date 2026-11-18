@@ -35,6 +35,7 @@ public class Product implements IProduct {
 
     @Override
     public double GetAverageProductSold() {
+        int count = salesData.length * salesData[0].length;
         return (double) GetTotalProductsSold() / productNames.length;
     }
 
@@ -55,6 +56,8 @@ public class Product implements IProduct {
         }
         return productNames[bestIndex] + " (" + bestTotal + ")";
     }
+
+  
 }
 
 

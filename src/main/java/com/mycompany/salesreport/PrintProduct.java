@@ -8,7 +8,9 @@ package com.mycompany.salesreport;
  *
  * @author peter
  */
- private IProduct product;
+public class PrintProduct {
+
+    private IProduct product;
 
     public PrintProduct(IProduct product) {
         this.product = product;
